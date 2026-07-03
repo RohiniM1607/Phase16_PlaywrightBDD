@@ -8,7 +8,7 @@ Feature: User Registration tests
     Scenario: Valid registration
         And User enter the first name as "Example"
         And User enter the last name as "Ex"
-        And User enter the Email as "example12.123@gmail.com"
+        And User enter the Email as "example1234.12345@gmail.com"
         And User enter the telephone as "1234567890"
         And User enter the Password as "Example@123"
         And User enter the conform password as "Example@123"
