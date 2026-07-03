@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5458","Login should be success","","2026-07-03","passed","2026-07-03","","","",""
+"","10705","Valid registration","","2026-07-03","broken","2026-07-03","","","",""
+"","3905","Register with an existing email","","2026-07-03","passed","2026-07-03","","","",""
+"","3478","Login should not be success","","2026-07-03","passed","2026-07-03","","","",""

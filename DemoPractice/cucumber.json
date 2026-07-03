@@ -1,0 +1,21 @@
+{
+    "default": {
+        "formatOptions":{
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "src/test/features/TutorialsNinja_Login.feature"
+        ],
+        "dryRun": false,
+        "require": [
+            "src/hooks/*.ts",
+            "src/test/steps/*.ts"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ],
+        "format": [
+            "html: reports/cucumber-report.html"
+        ]
+    }
+}

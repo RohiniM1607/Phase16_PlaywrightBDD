@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="32.347" tests="4" skipped="0" failures="1" errors="0" timestamp="2026-07-03T02:31:10.419Z">
+  <testcase classname="User Authentication tests" name="Login should be success" time="7.11">
+    <system-out><![CDATA[Given User navigates to the application.....................................passed
+And User click the Account menu.............................................passed
+And User click on the login link............................................passed
+And User enter the email as "demo1.123@gmail.com"...........................passed
+And User enter the password as "Demo@123"...................................passed
+When User click on the login button.........................................passed
+Then My Account should be displayed.........................................passed]]></system-out>
+  </testcase>
+  <testcase classname="User Authentication tests" name="Login should not be success" time="6.585">
+    <system-out><![CDATA[Given User navigates to the application.....................................passed
+And User click the Account menu.............................................passed
+And User click on the login link............................................passed
+And User enter the email as "demo1.123@gmail.com"...........................passed
+And User enter the empty password as "".....................................passed
+When User click on the login button.........................................passed
+Then Login should be unsuccessful...........................................passed]]></system-out>
+  </testcase>
+  <testcase classname="User Registration tests" name="Valid registration" time="12.528">
+    <failure type="Error" message="function timed out, ensure the promise resolves within 5000 milliseconds"><![CDATA[Error: function timed out, ensure the promise resolves within 5000 milliseconds
+    at Timeout.<anonymous> (D:\EXPLEO - SmartCliff_Training\Git\11_Playwright_BDD\Playwright-BDD\node_modules\@cucumber\cucumber\src\time.ts:50:14)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)]]></failure>
+    <system-out><![CDATA[Given User navigated to the application.....................................passed
+And User clicks the Account menu............................................passed
+And User click on the register link.........................................passed
+And User enter the first name as "Example"..................................passed
+And User enter the last name as "Ex"........................................passed
+And User enter the Email as "example1.123@gmail.com"........................passed
+And User enter the telephone as "1234567890"................................passed
+And User enter the Password as "Example@123"................................passed
+And User enter the conform password as "Example@123"........................passed
+And User click the policy check box.........................................passed
+When User click on the continue button......................................passed
+Then success should be displayed............................................failed]]></system-out>
+  </testcase>
+  <testcase classname="User Registration tests" name="Register with an existing email" time="5.984">
+    <system-out><![CDATA[Given User navigated to the application.....................................passed
+And User clicks the Account menu............................................passed
+And User click on the register link.........................................passed
+And User enter the first name as "Demo".....................................passed
+And User enter the last name as "D".........................................passed
+And User enter the Email as "demo.1@gmail.com"..............................passed
+And User enter the telephone as "1234567890"................................passed
+And User enter the Password as "Demo@123"...................................passed
+And User enter the conform password as "Demo@123"...........................passed
+And User click the policy check box.........................................passed
+When User click on the continue button......................................passed
+Then Existing account warning should be displayed...........................passed]]></system-out>
+  </testcase>
+</testsuite>
