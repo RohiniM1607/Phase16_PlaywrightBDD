@@ -23,7 +23,28 @@ module.exports = {
             "json:reports/cucumber-report.json",
             "html:reports/cucumber-report.html",
             "junit:reports/results.xml",
-            "allure-cucumberjs/reporter"
+            "allure-cucumberjs/reporter",
+            "rerun:@rerun.txt"
         ]
-    }
+    },
+    rerun: {
+    requireModule: [
+        "ts-node/register"
+    ],
+    require: [
+        "src/test/steps/**/*.ts",
+        "src/hooks/hooks.ts",
+        "src/hooks/**/*.ts",
+        "src/test/support/**/*.ts"
+    ],
+    paths: [
+        "@rerun.txt"
+    ],
+    publishQuiet: true,
+    dryRun: false,
+    format: [
+        "progress-bar",
+        "html:reports/rerun-report.html"
+    ]
+}
 }
