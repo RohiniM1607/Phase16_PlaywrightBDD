@@ -18,10 +18,11 @@ module.exports = {
         dryRun: false,
 
         format:[
-            "progress-bar",
+            "progress",
             "json:reports/cucumber-report.json",
             "html:reports/cucumber-report.html",
             "junit:reports/results.xml",
+            "allure-cucumberjs/reporter"
            
         ]
     }
