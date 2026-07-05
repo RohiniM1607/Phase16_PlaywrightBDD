@@ -14,16 +14,16 @@ BeforeAll(async function(){
 Before(async function() {
     context = await browser.newContext();
     page = await context.newPage();
+    
+    pageFixture.browser = browser;
+    pageFixture.context = context;
     pageFixture.page = page;
 });
 
 After(async function({pickle}){
-    const img = await pageFixture.page.screenshot({
-            path: `./test-results/screenshots/${pickle.name}.png`,
-            type: "png"
-        });
+    const img = await pageFixture.page.screenshot({path: `./test-results/screenshots/${pickle.name}.png`,type: "png"});
 
-        await this.attach(img, "image/png");
+    await this.attach(img, "image/png");
     await page.close();
     await context.close();
 })
