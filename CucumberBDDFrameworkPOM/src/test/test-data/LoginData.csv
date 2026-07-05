@@ -1,0 +1,3 @@
+type,email,password
+valid,sample.123@gmail.com,Sample@123
+invalid,existinguser@gmail.com,Wrong@123

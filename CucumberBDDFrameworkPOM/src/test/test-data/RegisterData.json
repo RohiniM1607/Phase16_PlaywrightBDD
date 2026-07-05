@@ -1,0 +1,26 @@
+{
+  "newUser": {
+    "name": "Dummy",
+    "email": "dummy.1@gmail.com",
+    "title": "Mrs",
+    "password": "Dummy@123",
+    "day": "10",
+    "month": "May",
+    "year": "2002",
+    "firstName": "Dummy",
+    "lastName": "D",
+    "company": "ABC Technologies",
+    "address1": "No.10, Gandhi Street",
+    "address2": "Near Bus Stand",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "city": "Salem",
+    "zipcode": "636001",
+    "mobileNumber": "9876543210"
+  },
+
+  "existingUser": {
+    "name": "Sample",
+    "email": "sample.123@gmail.com"
+  }
+}
