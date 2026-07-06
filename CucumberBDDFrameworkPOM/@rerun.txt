@@ -1,0 +1,5 @@
+src\test\features\TC1_ValidRegistration.feature:7
+src\test\features\TC2_ValidLogin.feature:7
+src\test\features\TC3_InvalidLogin.feature:7
+src\test\features\TC4_Logout.feature:7
+src\test\features\TC5_InvalidRegister.feature:7

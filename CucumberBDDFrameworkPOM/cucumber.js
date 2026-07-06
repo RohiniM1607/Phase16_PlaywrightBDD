@@ -9,21 +9,19 @@ module.exports = {
              "src/test/hooks/Hooks.ts"
         ],
         formatOptions: {
-            snippetInterface: "async-await"
+            snippetInterface: "async-await",
+            resultsDir: "reports/allure-results"
         },
-        paths:[
-            "src/test/features/**/*.feature"
-        ],
-        publishQuiet:true,
+        // paths:[
+        //     "src/test/features/**/*.feature"
+        // ],
         dryRun: false,
-
+        
         format:[
             "progress",
             "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "junit:reports/results.xml",
-            "allure-cucumberjs/reporter"
-           
+            "html:reports/cucumber-report.html"
         ]
+        
     }
 }

@@ -14,6 +14,10 @@ Given("User launches Automation Exercise application", async function (this: AEW
     await homePage.openApplication();
 });
 
+Then("User verifies that home page is visible", async function(this: AEWorld){
+    await homePage.verifyHomePage();
+});
+
 When("User navigates to Signup Login page", async function () {
     await homePage.clickSignupLogin();
 });

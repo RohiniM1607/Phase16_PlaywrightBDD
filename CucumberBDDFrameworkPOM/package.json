@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "cucumber-js"
-},
+    "test": "cucumber-js src/test/features/TC9_SearchProduct.feature",
+    "posttest": "npx ts-node src/test/utils/Report.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,10 +16,9 @@
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
     "@types/winston": "^2.4.4",
-    "allure-commandline": "^2.43.0",
     "allure-cucumberjs": "^3.10.2",
     "cross-env": "^10.1.0",
-    "multiple-cucumber-html-reporter": "^4.0.0",
+    "multiple-cucumber-html-reporter": "^3.10.0",
     "ts-node": "^10.9.2"
   },
   "dependencies": {

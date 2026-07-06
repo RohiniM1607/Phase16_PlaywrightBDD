@@ -1,8 +1,10 @@
 Feature: Login
 
-Scenario: Login using invalid credentials
+    Background: 
+        Given User launches Automation Exercise application
+        Then User verifies that home page is visible
 
-Given User launches Automation Exercise application
-When User navigates to Signup Login page
-And User enters invalid login credentials
-Then Error message should be displayed
+    Scenario: Login using invalid credentials
+        When User navigates to Signup Login page
+        And User enters invalid login credentials
+        Then Error message should be displayed

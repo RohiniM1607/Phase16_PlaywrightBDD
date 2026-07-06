@@ -1,8 +1,11 @@
 Feature: Register Existing User
 
-Scenario: Register using already existing email
+    Background: 
+        Given User launches Automation Exercise application
+        Then User verifies that home page is visible
 
-Given User launches Automation Exercise application
-When User navigates to Signup Login page
-And User enters existing email
-Then Existing email error should be displayed
+    Scenario: Register using already existing email
+        Given User launches Automation Exercise application
+        When User navigates to Signup Login page
+        And User enters existing email
+        Then Existing email error should be displayed
