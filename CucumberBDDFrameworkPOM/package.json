@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js src/test/features/TC9_SearchProduct.feature",
+    "test": "cucumber-js src/test/features/",
     "posttest": "npx ts-node src/test/utils/Report.ts"
   },
   "keywords": [],
